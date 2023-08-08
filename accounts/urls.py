@@ -10,4 +10,5 @@ urlpatterns = [
     path('dj-rest-auth/', include('dj_rest_auth.urls')),
     path('dj-rest-auth/registration/', include('dj_rest_auth.registration.urls')),
     path('accounts/', include('allauth.urls')),
+    re_path(r'^media/(?P<path>.*)$', serve, {'document_root':MEDIA_ROOT}),
 ]
