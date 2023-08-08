@@ -22,7 +22,8 @@ DEBUG = False
 ALLOWED_HOSTS = ['*']
 
 CORS_ORIGIN_ALLOW_ALL = True 
-CORS_ALLOW_CREDENTIALS = True 
+CORS_ALLOW_CREDENTIALS = True
+CSRF_TRUSTED_ORIGINS = ['https://port-0-elderlyback-ac2nll1a16hv.sel3.cloudtype.app', 'http://0:8000'] 
 
 
 # Application definition
