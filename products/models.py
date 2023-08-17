@@ -38,6 +38,7 @@ class Product(TimeStampModel):
     class Meta:
         db_table = 'products'
 
+
 #리뷰
 class Review(TimeStampModel):
     user = models.ForeignKey('accounts.User',verbose_name="작성자", on_delete=models.SET_NULL, null=True)  #유저
